@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.annalenabroecker.com/">
     <meta property="og:title" content="Dr. Anna-Lena Bröcker">
-    <meta property="og:description" content="Psychotherapeutin, Supervisorin, Autorin, Dozentin und Forscherin in Berlin – mit dem Anliegen, Kontexte und Perspektiven in lebendigen Austausch zu bringen.">
+    <meta property="og:description" content="Psychotherapeutin, Supervisorin, Autorin, Dozentin und Forscherin in Berlin.">
     <meta property="og:image" content="https://www.annalenabroecker.com/images/startseite.jpg">
     <meta property="og:image:width" content="933">
     <meta property="og:image:height" content="1400">
@@ -23,7 +23,7 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dr. Anna-Lena Bröcker">
-    <meta name="twitter:description" content="Psychotherapeutin, Supervisorin, Autorin, Dozentin und Forscherin in Berlin – mit dem Anliegen, Kontexte und Perspektiven in lebendigen Austausch zu bringen.">
+    <meta name="twitter:description" content="Psychotherapeutin, Supervisorin, Autorin, Dozentin und Forscherin in Berlin.">
     <meta name="twitter:image" content="https://www.annalenabroecker.com/images/startseite.jpg">
 
     <style>
@@ -37,7 +37,7 @@
 
         body {
             font-family: 'EB Garamond', serif;
-            color: #1a1a1a;
+            color: #2b2018;
             background: #f5f3ef;
             line-height: 1.25;
             min-height: 100vh;
@@ -75,11 +75,28 @@
 
         .photo-credit {
             font-family: 'EB Garamond', serif;
-            font-style: italic;
+            font-style: normal;
             font-size: 16px;
-            color: #1a1a1a;
+            color: #3a2c20;
             margin-top: 3px;
             text-align: left;
+        }
+
+        /* Desktop: Credit dezent unten links aufs Bild legen, fadet beim Hovern ein */
+        @media (min-width: 601px) {
+            .photo-credit {
+                position: absolute;
+                left: 14px;
+                bottom: 14px;
+                margin-top: 0;
+                color: #efe7d8;
+                opacity: 0;
+                transition: opacity 0.35s ease;
+                pointer-events: none;
+            }
+            .portrait-container:hover .photo-credit {
+                opacity: 1;
+            }
         }
 
         /* Name */
@@ -107,7 +124,7 @@
         }
 
         .subtitle.faded {
-            color: #bbb;
+            color: #b29a7d;
         }
 
         .subtitle.active-item {
@@ -129,13 +146,13 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 1.6;
-            color: #222;
+            color: #3a2c20;
             text-align: justify;
             -webkit-hyphens: none;
             -ms-hyphens: none;
             hyphens: none;
-            padding: 28px;
-            background: #f5f3ef;
+            padding: 0;
+            background: transparent;
             transition: background 0.5s ease;
             z-index: 50;
             animation: fadeIn 0.3s ease;
@@ -151,7 +168,7 @@
             font-weight: 400;
             font-size: 22px;
             margin-bottom: 16px;
-            color: #1a1a1a;
+            color: #2b2018;
         }
 
         .detail-box p {
@@ -160,10 +177,10 @@
 
         .detail-box .detail-meta {
             font-size: 12px;
-            color: #aaa;
+            color: #9c8e78;
             margin-top: 20px;
             padding-top: 16px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #e0d8c8;
         }
 
         .detail-box .close-x {
@@ -172,13 +189,13 @@
             right: 14px;
             font-family: 'Inter', sans-serif;
             font-size: 16px;
-            color: #bbb;
+            color: #b3a48f;
             cursor: pointer;
             transition: color 0.2s;
         }
 
         .detail-box .close-x:hover {
-            color: #1a1a1a;
+            color: #2b2018;
         }
 
         /* Quote */
@@ -188,8 +205,8 @@
             font-weight: 400;
             font-size: clamp(18px, 2.2vw, 26px);
             line-height: 1.5;
-            color: #888;
-            max-width: 65%;
+            color: #8a7256;
+            max-width: calc(100% - 680px);
             margin-top: 110px;
             padding-bottom: 100px;
             transition: opacity 0.3s ease;
@@ -215,7 +232,7 @@
             font-family: 'EB Garamond', serif;
             font-style: italic;
             font-size: 16px;
-            color: #1a1a1a;
+            color: #2b2018;
         }
 
         .footer-links {
@@ -225,17 +242,21 @@
         }
 
         .footer-links a {
-            color: #1a1a1a;
-            text-decoration: none;
+            color: #2b2018;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b9a98f;
             transition: color 0.2s;
         }
 
         .footer-links a:hover {
-            color: #bbb;
+            color: #b3a48f;
+            text-decoration-color: #b3a48f;
         }
 
         .footer-links .sep {
-            color: #ccc;
+            color: #d2c7b3;
             margin: 0 6px;
         }
 
@@ -252,14 +273,14 @@
         .page-back {
             font-family: 'Inter', sans-serif;
             font-size: 12px;
-            color: #bbb;
+            color: #b3a48f;
             text-decoration: none;
             display: inline-block;
             margin-bottom: 48px;
             transition: color 0.2s;
         }
 
-        .page-back:hover { color: #1a1a1a; }
+        .page-back:hover { color: #2b2018; }
 
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -280,7 +301,7 @@
             font-weight: 300;
             line-height: 1.7;
             margin-bottom: 18px;
-            color: #555;
+            color: #5a4d3e;
             max-width: 580px;
         }
 
@@ -290,11 +311,11 @@
             font-size: 14px;
             font-weight: 300;
             line-height: 2;
-            color: #555;
+            color: #5a4d3e;
         }
 
         .contact-details a {
-            color: #1a1a1a;
+            color: #2b2018;
             text-decoration: none;
             border-bottom: 1px solid #a8c4e8;
         }
@@ -321,7 +342,7 @@
         .pub-entry .pub-source {
             font-family: 'Inter', sans-serif;
             font-style: italic;
-            color: #888;
+            color: #8a7a64;
             font-size: 13px;
             font-weight: 300;
             margin-top: 4px;
@@ -334,7 +355,7 @@
             font-size: 11px;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: #bbb;
+            color: #b3a48f;
             font-weight: 400;
             margin-bottom: 4px;
         }
@@ -349,7 +370,7 @@
             font-family: 'Inter', sans-serif;
             font-size: 13px;
             font-weight: 300;
-            color: #888;
+            color: #8a7a64;
             margin-top: 4px;
         }
 
@@ -359,10 +380,30 @@
             font-size: 10px;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: #bbb;
-            border: 1px solid #ddd;
+            color: #b3a48f;
+            border: 1px solid #cabfa9;
             padding: 2px 8px;
             margin-top: 6px;
+        }
+
+        /* 13"–15" laptops (e.g. MacBook 13") — keep the portrait clear of the
+           text, scale name + photo down a touch, let the quote run taller */
+        @media (min-width: 601px) and (max-width: 1500px) {
+            .portrait-container { width: 420px; }
+            h1 { font-size: clamp(34px, 4.4vw, 52px); }
+            .subtitle { font-size: clamp(22px, 3vw, 38px); }
+            .quote {
+                max-width: 50%;
+                margin-top: 72px;
+            }
+            .detail-box { width: 38%; }
+        }
+
+        /* smaller laptops / narrow windows */
+        @media (min-width: 601px) and (max-width: 1180px) {
+            .portrait-container { width: 340px; }
+            .quote { max-width: 46%; }
+            .detail-box { left: 22%; width: 40%; }
         }
 
         @media (max-width: 600px) {
@@ -370,7 +411,7 @@
                 display: block !important;
                 position: static !important;
                 width: 100% !important;
-                order: 3;
+                order: 4;
                 margin: 28px 0 0 0 !important;
             }
             .portrait {
@@ -389,10 +430,10 @@
             h1 { order: 1; }
             .subtitle { order: 2; }
             .quote {
-                order: 9;
+                order: 3;
                 max-width: 100% !important;
                 margin-top: 28px !important;
-                margin-bottom: 32px !important;
+                margin-bottom: 0 !important;
                 padding-bottom: 0 !important;
             }
             .footer-bar {
@@ -415,9 +456,9 @@
             }
             .detail-box-credit {
                 font-family: 'EB Garamond', serif;
-                font-style: italic;
+                font-style: normal;
                 font-size: 16px;
-                color: #1a1a1a;
+                color: #3a2c20;
                 text-align: left;
                 margin-top: 3px;
             }
@@ -436,6 +477,7 @@
                 overflow-y: auto;
                 z-index: 200 !important;
                 text-align: left !important;
+                background: #f5f3ef;
             }
             .detail-box::before {
                 content: attr(data-title);
@@ -444,7 +486,7 @@
                 font-style: italic;
                 font-size: 28px;
                 margin-bottom: 20px;
-                color: #1a1a1a;
+                color: #2b2018;
             }
             .mobile-close {
                 display: block !important;
@@ -456,6 +498,51 @@
                 z-index: 300;
                 cursor: pointer;
             }
+
+            /* Rubrik-Switcher: tap any to jump straight there */
+            .detail-menu {
+                display: flex;
+                gap: 18px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 4px -24px 24px -24px;
+                padding: 0 24px 12px 24px;
+                border-bottom: 1px solid #d9d2c4;
+                scrollbar-width: none;
+            }
+            .detail-menu::-webkit-scrollbar { display: none; }
+            .dm-item {
+                font-family: 'EB Garamond', serif;
+                font-style: italic;
+                font-size: 17px;
+                white-space: nowrap;
+                color: #b3a892;
+                cursor: pointer;
+                padding-bottom: 3px;
+                transition: color 0.2s;
+            }
+            .dm-item.dm-active {
+                color: #2b2018;
+                border-bottom: 2px solid #2b2018;
+            }
+
+            /* Vor / Zurück durch die Rubriken — links/rechts unter dem Foto */
+            .detail-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 16px;
+                margin-top: 36px;
+            }
+            .detail-nav span {
+                font-family: 'EB Garamond', serif;
+                font-style: italic;
+                font-size: 21px;
+                color: #2b2018;
+                cursor: pointer;
+                max-width: 47%;
+            }
+            .detail-nav .dn-next { text-align: right; }
         }
     </style>
 </head>
@@ -463,11 +550,11 @@
 
 <div class="landing" id="home" style="position: relative; z-index: 1;">
     <div style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 16px; margin-bottom: 24px;">
-        <span id="lang-de2" onclick="switchLang('de')" style="cursor: pointer; color: #1a1a1a;">DE</span>
-        <span style="color: #ccc; margin: 0 4px;">|</span>
-        <span id="lang-en2" onclick="switchLang('en')" style="cursor: pointer; color: #bbb;">EN</span>
-        <span style="color: #ccc; margin: 0 4px;">|</span>
-        <span id="lang-fr2" onclick="switchLang('fr')" style="cursor: pointer; color: #bbb;">FR</span>
+        <span id="lang-de2" onclick="switchLang('de')" style="cursor: pointer; color: #2b2018;">DE</span>
+        <span style="color: #d2c7b3; margin: 0 4px;">|</span>
+        <span id="lang-en2" onclick="switchLang('en')" style="cursor: pointer; color: #b3a48f;">EN</span>
+        <span style="color: #d2c7b3; margin: 0 4px;">|</span>
+        <span id="lang-fr2" onclick="switchLang('fr')" style="cursor: pointer; color: #b3a48f;">FR</span>
     </div>
 
     <div class="portrait-container">
@@ -478,7 +565,7 @@
     <h1 onclick="closeDetail()" style="cursor: pointer;">Dr. Anna-Lena Bröcker</h1>
 
     <span class="subtitle" data-image="images/psychotherapeutin.jpg" data-box="box-psycho" data-bg="#e8e2d1" data-credit="&copy; Ewa Priester, 2026" data-de="Psychotherapeutin" data-en="Psychotherapist" data-fr="Psychothérapeute" onclick="toggleDetail(this)">Psychotherapeutin</span>
-    <span class="subtitle" data-image="images/supervisorin.jpg" data-box="box-super" data-bg="#ddd3c7" data-credit="&copy; Ewa Priester, 2026" data-de="Supervisorin" data-en="Supervisor" data-fr="Superviseure" onclick="toggleDetail(this)">Supervisorin</span>
+    <span class="subtitle" data-image="images/supervisorin.jpg" data-box="box-super" data-bg="#cabfa93c7" data-credit="&copy; Ewa Priester, 2026" data-de="Supervisorin" data-en="Supervisor" data-fr="Superviseure" onclick="toggleDetail(this)">Supervisorin</span>
     <span class="subtitle" data-image="images/autorin.jpg" data-box="box-auto" data-bg="#d4d7c0" data-credit="&copy; Paula Strunden, 2026" data-de="Autorin" data-en="Author" data-fr="Auteure" onclick="toggleDetail(this)">Autorin</span>
     <span class="subtitle" data-image="images/dozentin.jpg" data-box="box-doz" data-bg="#e4dcc7" data-credit="&copy; Mike Kurz-Klar, 2026" data-de="Dozentin" data-en="Lecturer" data-fr="Enseignante" onclick="toggleDetail(this)">Dozentin</span>
     <span class="subtitle" data-image="images/forscherin.jpg" data-box="box-forsch" data-bg="#d6dee2" data-credit="&copy; Mike Kurz-Klar, 2026" data-de="Forscherin" data-en="Researcher" data-fr="Chercheuse" onclick="toggleDetail(this)">Forscherin</span>
@@ -581,7 +668,7 @@
         'box-psycho': {
             de: '<p>Meine psychotherapeutische Praxis befindet sich auf dem Gelände des St.Hedwig-Krankenhauses, wo ich von 2017-2020 als Stationspsychologin auf einer Allgemeinpsychiatrischen Station tätig war. Ich behandle schwerpunktmäßig Menschen mit <b>Psychosen</b> und <b>psychiatrischen Krankheitsbildern</b>, stelle aber auch begrenzte Kapazitäten für privat und gesetzlich versicherte Patient:innen des gesamten Spektrums psychischer Erkrankungen zur Verfügung. Ich bin seit 2022 als freie Mitarbeiterin der <b>Psychoseambulanz Berlin</b> tätig, die in Kooperation der International Psychoanalytic University Berlin und der Psychiatrischen Universitätsklinik der Charité im St.Hedwig-Krankenhaus gegründet wurde.</p><p>Meine Ausbildung habe ich an der Berliner Akademie für Psychotherapie absolviert und hier 2021 mit der Fachkunde <b>tiefenpsychologisch-fundierte Psychotherapie</b> approbiert. Mir war es wichtig an einem Institut zu lernen, das bewusst den Austausch zu anderen Richtlinienverfahren fördert und einen Bezug zur Empirie pflegt. Seit 2022 lehre ich am Institut als Dozentin und werde das Tätigkeitsprofil ab Herbst 2026 um die Funktion als Lehrtherapeutin und Supervisorin ergänzen.</p>',
             en: '<p>My psychotherapy practice is located on the grounds of St. Hedwig Hospital, where I worked as a ward psychologist on a general psychiatric unit from 2017–2020. I primarily treat people with psychoses and psychiatric conditions, but also offer limited capacity for privately and publicly insured patients across the full spectrum of mental health disorders. Since 2022, I have been working as a freelance associate at the Psychosis Outpatient Clinic Berlin, founded in cooperation between the International Psychoanalytic University Berlin and the Charité Psychiatric University Clinic at St. Hedwig Hospital.</p><p>I completed my training at the Berlin Academy of Psychotherapy and received my licence in psychodynamic psychotherapy in 2021. It was important to me to train at an institute that actively promotes exchange with other therapeutic approaches and maintains a connection to empirical research. Since 2022, I have been teaching at the institute, and from autumn 2026 I will expand my role to include work as a training therapist and supervisor.</p>',
-            fr: '<p>Mon cabinet de psychothérapie se trouve sur le site de l\'hôpital St. Hedwig, où j\'ai travaillé comme psychologue de service dans une unité de psychiatrie générale de 2017 à 2020. Je traite principalement des personnes souffrant de psychoses et de troubles psychiatriques, tout en offrant des capacités limitées pour les patient·e·s assuré·e·s privé·e·s et publics. Depuis 2022, je suis collaboratrice indépendante de la Consultation ambulatoire pour les psychoses de Berlin, fondée en coopération entre l\'International Psychoanalytic University Berlin et la Clinique universitaire psychiatrique de la Charité à l\'hôpital St. Hedwig.</p><p>J\'ai suivi ma formation à l\'Académie berlinoise de psychothérapie et obtenu mon agrément en psychothérapie psychodynamique en 2021. À partir de l\'automne 2026, j\'élargirai mon profil avec les fonctions de thérapeute formatrice et superviseure.</p>'
+            fr: '<p>Mon cabinet de psychothérapie se trouve sur le site de l\'hôpital St. Hedwig, où j\'ai travaillé comme psychologue de service dans une unité de psychiatrie générale de 2017 à 2020. Je traite principalement des personnes souffrant de psychoses et de troubles psychiatriques, tout en offrant des capacités limitées pour les patient·e·s assuré·e·s privé·e·s et publics. Depuis 2022, je suis collaboratrice indépendante de la Consultation ambulatoire pour les psychoses de Berlin, fondée en coopération entre l\'International Psychoanalytic University Berlin et la Clinique universitaire psychiatrique de la Charité à l\'hôpital St. Hedwig.</p><p>J\'ai suivi ma formation à l\'Académie berlinoise de psychothérapie et y ai obtenu mon agrément en psychothérapie psychodynamique en 2021. Il était important pour moi d\'apprendre dans un institut qui encourage délibérément les échanges avec d\'autres approches thérapeutiques reconnues et qui entretient un lien avec la recherche empirique. Depuis 2022, j\'y enseigne en tant qu\'enseignante, et à partir de l\'automne 2026, j\'élargirai mon profil avec les fonctions de thérapeute formatrice et superviseure.</p>'
         },
         'box-super': {
             de: '<p>Ich habe 2025 meine Weiterbildung zur <b>psychodynamischen Supervisorin</b> am Institut für psychodynamische Organisationsberatung in München abgeschlossen. Ich verfüge über mehrjährige Erfahrung als Fallsupervisorin einer psychotherapeutisch-psychiatrischen Abteilung und habe punktuell Klinikteams supervisorisch begleitet. Ich nutze in meiner Arbeit mein Wissen aus stationärer und ambulanter Tätigkeit und verbinde <b>psychodynamisches Denken</b> mit Anforderungen täglicher <b>psychiatrischer Klinikarbeit</b>.</p><p>Im Laufe diesen Jahres werde ich meinen Schwerpunkt vorerst in den Bereich der Einzelsupervision im Kontext der Aus- und Weiterbildung verlagern.</p>',
@@ -590,8 +677,8 @@
         },
         'box-auto': {
             de: '<p>Bei meinem freien Schreiben interessiert es mich besonders, einen lebendigen Zugang zum psychodynamischen Denken zu ermöglichen, wobei ich fallbezogene Darstellungen, klinische Vertiefungen sowie ethische und gesellschaftsrelevante Aspekte berücksichtige. In meinen aktuell geplanten Kapiteln stehen die Themen <b>„Freiheit“</b> sowie <b>„Lesen als Möglichkeitsraum“</b> im Fokus. Mich interessiert die Frage, inwiefern die Erweiterung von Freiheitsgraden als ein Kernziel psychotherapeutischer Interventionen definiert werden kann und wo diese im psychotherapeutischen und psychiatrischen Kontext an innere Grenzen der Behandelnden stoßen. Ich möchte ferner prüfen, wie die Rezeption von Literatur den eigenen Fantasieraum erweitern und dabei helfen kann, Ängste zu überwinden, um Entfaltungsmöglichkeiten zu ergreifen.</p><p>Seit 2022 richte ich jährlich ein Seminar zum Thema <b>„Literatur und Tiefenpsychologie“</b> aus, das das Werk „Bartleby“ von Herman Melville in den Fokus stellt.</p>',
-            en: '<p>In my free writing, I am particularly interested in providing a vivid access to psychodynamic thinking, incorporating case-based accounts, clinical depth as well as ethical and socially relevant aspects.</p><p>In my currently planned chapters on "Freedom and Psychosis" and "Reading as a Space of Possibility," I am driven by the question of how the expansion of degrees of freedom can be defined as a core goal of psychotherapeutic interventions — and where these encounter internal treatment limits in the psychiatric context. I want to examine how the reception of literature can expand one\'s own imaginative space and help overcome fears.</p><p>Since 2022, I have been organising an annual seminar on "Literature and Psychodynamics," focusing on Herman Melville\'s "Bartleby."</p>',
-            fr: '<p>Dans mon écriture libre, je m\'intéresse particulièrement à offrir un accès vivant à la pensée psychodynamique, en intégrant des présentations de cas, des approfondissements cliniques ainsi que des aspects éthiques et sociétaux.</p><p>Dans mes chapitres actuellement prévus sur « Liberté et psychose » et « La lecture comme espace de possibilité », je suis animée par la question de savoir dans quelle mesure l\'élargissement des degrés de liberté peut être défini comme objectif central des interventions psychothérapeutiques — et où ceux-ci rencontrent des limites internes dans le contexte psychiatrique.</p><p>Depuis 2022, j\'organise annuellement un séminaire sur « Littérature et psychodynamique », centré sur l\'œuvre « Bartleby » de Herman Melville.</p>'
+            en: '<p>In my free writing, I am particularly interested in providing a vivid access to psychodynamic thinking, incorporating case-based accounts, clinical depth as well as ethical and socially relevant aspects.</p><p>My currently planned chapters focus on the themes of "Freedom" and "Reading as a Space of Possibility." I am driven by the question of to what extent the expansion of degrees of freedom can be defined as a core goal of psychotherapeutic interventions — and where, in the psychotherapeutic and psychiatric context, these reach the inner limits of those providing treatment. I also want to examine how the reception of literature can expand one\'s own space of imagination and help to overcome fears in order to seize opportunities for development.</p><p>Since 2022, I have been organising an annual seminar on "Literature and Psychodynamics," focusing on Herman Melville\'s "Bartleby."</p>',
+            fr: '<p>Dans mon écriture libre, je m\'intéresse particulièrement à offrir un accès vivant à la pensée psychodynamique, en intégrant des présentations de cas, des approfondissements cliniques ainsi que des aspects éthiques et sociétaux.</p><p>Mes chapitres actuellement prévus portent sur les thèmes de la « Liberté » et de « La lecture comme espace de possibilité ». Je m\'intéresse à la question de savoir dans quelle mesure l\'élargissement des degrés de liberté peut être défini comme un objectif central des interventions psychothérapeutiques — et où, dans le contexte psychothérapeutique et psychiatrique, ceux-ci rencontrent les limites internes des thérapeutes. Je souhaite en outre examiner comment la réception de la littérature peut élargir notre propre espace d\'imagination et aider à surmonter les peurs afin de saisir des possibilités d\'épanouissement.</p><p>Depuis 2022, j\'organise annuellement un séminaire sur « Littérature et psychodynamique », centré sur l\'œuvre « Bartleby » de Herman Melville.</p>'
         },
         'box-doz': {
             de: '<p>Als Dozentin bringe ich mich sowohl in die psychotherapeutische Aus- und Weiterbildung sowie in die universitäre Lehre ein, wobei ich Seminare an psychodynamisch sowie verhaltenstherapeutisch orientierten Instituten anbiete. Ich vermittle allgemeines Wissen über psychodynamische Konzepte sowie spezifische Erfahrungen und Forschungsergebnisse zum Umgang mit Menschen mit Psychosen und halte hierfür an verschiedenen staatlichen und privaten Universitäten Gastvorlesungen und -seminare.</p>',
@@ -600,8 +687,8 @@
         },
         'box-forsch': {
             de: '<p>Meine Forschung konzentriert sich seit 2014 auf den Bereich der <b>Psychosenpsychotherapie</b> mit <b>psychodynamischen Schwerpunkt</b>. Aus dem Bestreben heraus, Verbindungen zwischen benachbarten Disziplinen zu stärken und einen Beitrag dabei zu leisten, psychodynamische Psychotherapie im Forschungsdialog zu positionieren, konzentriere ich mich auf Konzepte, die eine gemeinsame Sprache fördern und multidisziplinär zugänglich sind. Seit 2025 co-leite ich die <b>Arbeitsgruppe Empathie und Interpersonelle Prozesse</b> an der <b>Charité</b> - Universitätsmedizin Berlin am Campus Mitte, die dem Bereich Psychotische Erkrankungen angehört. Ich kooperiere unter anderem mit Kolleg*innen der Freien Universität Berlin, des University College Londons sowie der Nordic University of Norway und betrachte hier vertieft mögliche Änderungsmarker psychotherapeutischer Prozesse - ausgehend von der therapeutischen Beziehung, dem Reflexionsvermögen bis hin zu sprachlichen Markern.</p><p>Seit 2023 interessiert es mich außerdem, wie wir aus psychotherapeutischer Perspektive zum Verstehen von <b>Radikalisierungsprozessen</b> beitragen können, die im Kontext zunehmender gesellschaftlicher Spannungsfelder an Brisanz gewinnen. Ich bin hier leitend in einem Praxisprojekt der Sekundär- und Tertiärprävention tätig und möchte in diesem Jahr den Forschungsarm des Projekts systematisch stärken. Hierbei interessieren mich wiederum transferfähige psychologische Konzepte, die über die reine Betrachtung von Symptomkategorien hinausreichen - wie <b>Mentalisierung</b>, <b>epistemisches Vertrauen</b> und <b>Persönlichkeitsfunktion</b>.</p>',
-            en: '<p>Since 2014, my research has focused on psychotherapy for psychosis with a psychodynamic emphasis. Driven by the goal of strengthening connections between neighbouring disciplines and positioning psychodynamic psychotherapy in the research dialogue, I have concentrated on concepts that promote a shared language and are accessible across disciplines.</p><p>Since 2025, I co-lead the working group on Empathy and Interpersonal Processes at the Charité – Universitätsmedizin Berlin (Campus Mitte). I collaborate with colleagues at Freie Universität Berlin, University College London, and the Nordic University of Norway, examining potential change markers in psychotherapeutic processes.</p><p>Since 2023, I have also been interested in how psychotherapeutic perspectives can contribute to understanding radicalisation processes. I lead a practice project in secondary and tertiary prevention, investigating with my interdisciplinary team how developmental and social influences relate to conditions and factors for radical attitudes and actions.</p>',
-            fr: '<p>Depuis 2014, mes recherches se concentrent sur la psychothérapie des psychoses avec un accent psychodynamique. Animée par l\'objectif de renforcer les liens entre disciplines voisines et de positionner la psychothérapie psychodynamique dans le dialogue scientifique, je me suis concentrée sur des concepts favorisant un langage commun et accessibles de manière multidisciplinaire.</p><p>Depuis 2025, je co-dirige le groupe de travail Empathie et processus interpersonnels à la Charité – Universitätsmedizin Berlin. Je coopère notamment avec des collègues de la Freie Universität Berlin, de l\'University College London et de la Nordic University of Norway.</p><p>Depuis 2023, je m\'intéresse également à la manière dont la perspective psychothérapeutique peut contribuer à la compréhension des processus de radicalisation. Je dirige un projet pratique de prévention secondaire et tertiaire avec mon équipe interdisciplinaire.</p>'
+            en: '<p>Since 2014, my research has focused on psychotherapy for psychosis with a psychodynamic emphasis. Driven by the goal of strengthening connections between neighbouring disciplines and positioning psychodynamic psychotherapy in the research dialogue, I have concentrated on concepts that promote a shared language and are accessible across disciplines.</p><p>Since 2025, I co-lead the working group Empathy and Interpersonal Processes at the Charité – Universitätsmedizin Berlin (Campus Mitte), which belongs to the field of Psychotic Disorders. Among others, I collaborate with colleagues from Freie Universität Berlin, University College London and the Nordic University of Norway, examining in depth potential markers of change in psychotherapeutic processes — from the therapeutic relationship and the capacity for reflection through to linguistic markers.</p><p>Since 2023, I have also been interested in how, from a psychotherapeutic perspective, we can contribute to understanding processes of radicalisation, which are gaining urgency amid increasing societal tensions. I hold a leading role in a practice project of secondary and tertiary prevention, and this year I intend to systematically strengthen the project\'s research arm. Here again, I am interested in transferable psychological concepts that reach beyond the mere consideration of symptom categories — such as mentalization, epistemic trust and personality functioning.</p>',
+            fr: '<p>Depuis 2014, mes recherches se concentrent sur la psychothérapie des psychoses avec un accent psychodynamique. Animée par l\'objectif de renforcer les liens entre disciplines voisines et de positionner la psychothérapie psychodynamique dans le dialogue scientifique, je me suis concentrée sur des concepts favorisant un langage commun et accessibles de manière multidisciplinaire.</p><p>Depuis 2025, je co-dirige le groupe de travail Empathie et processus interpersonnels à la Charité – Universitätsmedizin Berlin (Campus Mitte), qui relève du domaine des Maladies psychotiques. Je coopère notamment avec des collègues de la Freie Universität Berlin, de l\'University College London et de la Nordic University of Norway, et j\'examine ici de manière approfondie les marqueurs possibles de changement des processus psychothérapeutiques — de la relation thérapeutique et de la capacité de réflexion jusqu\'aux marqueurs langagiers.</p><p>Depuis 2023, je m\'intéresse également à la manière dont nous pouvons, d\'un point de vue psychothérapeutique, contribuer à la compréhension des processus de radicalisation, qui gagnent en acuité dans un contexte de tensions sociétales croissantes. J\'y occupe un rôle de direction dans un projet pratique de prévention secondaire et tertiaire, et je souhaite cette année renforcer systématiquement le volet recherche du projet. Ici encore, je m\'intéresse à des concepts psychologiques transférables qui vont au-delà de la seule considération des catégories de symptômes — tels que la mentalisation, la confiance épistémique et le fonctionnement de la personnalité.</p>'
         }
     };
 
@@ -613,16 +700,21 @@
     }
     updateBoxContent();
 
-    function toggleDetail(el) {
-        const imageSrc = el.dataset.image;
-        const boxId = el.dataset.box;
-        const img = document.querySelector('.portrait');
-        const box = document.getElementById(boxId);
+    const getSubtitles = () => Array.from(document.querySelectorAll('.subtitle'));
 
+    function toggleDetail(el) {
         if (activeItem === el) {
             closeDetail();
             return;
         }
+        openDetail(el);
+    }
+
+    function openDetail(el) {
+        const imageSrc = el.dataset.image;
+        const boxId = el.dataset.box;
+        const img = document.querySelector('.portrait');
+        const box = document.getElementById(boxId);
 
         document.querySelectorAll('.detail-box').forEach(d => d.classList.remove('visible'));
         document.querySelectorAll('.subtitle').forEach(s => {
@@ -634,10 +726,31 @@
         el.classList.add('active-item');
         document.querySelector('.quote').style.opacity = '0';
 
-        // Position box aligned with first subtitle
+        // Position box just below the first rubrik ("Psychotherapeutin"),
+        // clear of the name above — same anchor for every rubrik
         const firstSub = document.querySelector('.subtitle');
         const landing = document.querySelector('.landing');
-        box.style.top = (firstSub.offsetTop - landing.offsetTop + 10) + 'px';
+        box.style.top = (firstSub.offsetTop - landing.offsetTop + 12) + 'px';
+
+        // Desktop: centre the text column in the gap between the begriffe
+        // (left) and the photo (right), with equal breathing room on both sides
+        if (window.innerWidth > 600) {
+            const GAP = 56;
+            const landingRect = landing.getBoundingClientRect();
+            const portraitRect = document.querySelector('.portrait-container').getBoundingClientRect();
+            let subRight = 0;
+            getSubtitles().forEach(s => { subRight = Math.max(subRight, s.getBoundingClientRect().right); });
+            const gapStart = subRight + GAP;
+            const gapEnd = portraitRect.left - GAP;
+            const avail = gapEnd - gapStart;
+            if (avail > 160) {
+                const w = Math.min(avail, 560);
+                const leftPx = gapStart + (avail - w) / 2 - landingRect.left;
+                box.style.left = leftPx + 'px';
+                box.style.width = w + 'px';
+                box.style.right = 'auto';
+            }
+        }
 
         box.classList.add('visible');
         activeItem = el;
@@ -651,22 +764,54 @@
             box.style.background = bg;
         }
 
-        // On mobile, add image to detail box
+        // On mobile, build the image + prev/next navigation, and hide the
+        // footer links so they can't peek behind the full-screen overlay
         if (window.innerWidth <= 600) {
-            const boxContent = box.querySelector('.box-content');
-            // Remove any existing detail image
-            box.querySelectorAll('.detail-box-image, .detail-box-credit').forEach(e => e.remove());
-            const detailImg = document.createElement('img');
-            detailImg.src = imageSrc;
-            detailImg.className = 'detail-box-image';
-            boxContent.after(detailImg);
-            if (el.dataset.credit) {
-                const creditEl = document.createElement('div');
-                creditEl.className = 'detail-box-credit';
-                creditEl.innerHTML = el.dataset.credit;
-                detailImg.after(creditEl);
-            }
+            buildMobileExtras(box, el, imageSrc);
+            document.querySelector('.footer-bar').style.display = 'none';
+            box.scrollTop = 0;
         }
+    }
+
+    function buildMobileExtras(box, el, imageSrc) {
+        const boxContent = box.querySelector('.box-content');
+        // Remove anything built on a previous open
+        box.querySelectorAll('.detail-menu, .detail-box-image, .detail-box-credit, .detail-nav').forEach(e => e.remove());
+
+        const subs = getSubtitles();
+        const idx = subs.indexOf(el);
+        const nameOf = s => s.dataset[currentLang] || s.childNodes[0].textContent;
+
+        // Image + credit after the text
+        const detailImg = document.createElement('img');
+        detailImg.src = imageSrc;
+        detailImg.className = 'detail-box-image';
+        boxContent.after(detailImg);
+        let anchor = detailImg;
+        if (el.dataset.credit) {
+            const creditEl = document.createElement('div');
+            creditEl.className = 'detail-box-credit';
+            creditEl.innerHTML = el.dataset.credit;
+            detailImg.after(creditEl);
+            anchor = creditEl;
+        }
+
+        // Bottom prev / next — move through the rubriken without going back
+        const prev = subs[(idx - 1 + subs.length) % subs.length];
+        const next = subs[(idx + 1) % subs.length];
+        const nav = document.createElement('div');
+        nav.className = 'detail-nav';
+        const prevEl = document.createElement('span');
+        prevEl.className = 'dn-prev';
+        prevEl.textContent = '‹ ' + nameOf(prev);
+        prevEl.onclick = () => openDetail(prev);
+        const nextEl = document.createElement('span');
+        nextEl.className = 'dn-next';
+        nextEl.textContent = nameOf(next) + ' ›';
+        nextEl.onclick = () => openDetail(next);
+        nav.appendChild(prevEl);
+        nav.appendChild(nextEl);
+        anchor.after(nav);
     }
 
     function closeDetail() {
@@ -701,7 +846,7 @@
         updateBoxContent();
         ['de', 'en', 'fr'].forEach(l => {
             const el2 = document.getElementById('lang-' + l + '2');
-            el2.style.color = (l === lang) ? '#1a1a1a' : '#bbb';
+            el2.style.color = (l === lang) ? '#2b2018' : '#b3a48f';
         });
     }
 
